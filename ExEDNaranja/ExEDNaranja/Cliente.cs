@@ -21,6 +21,38 @@ namespace ExEDNaranja
 
 
 
+        public void SumaSaldo(double saldo)
+        {
+            this.saldo += saldo;
+        }
+
+        public void RestaSaldo(double saldo)
+        {
+            this.saldo -= saldo;
+        }
+
+        public string PositivoNegativo()
+        {
+            string resultado = "";
+
+            if(this.saldo >= 0)
+            {
+                resultado = "positivo";
+            }
+            else
+            {
+                resultado = "negativo";
+            }
+
+            return resultado;
+        }
+
+
+
+
+
+
+
 
 
     }
