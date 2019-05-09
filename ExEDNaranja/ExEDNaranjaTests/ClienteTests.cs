@@ -11,6 +11,9 @@ namespace ExEDNaranja.Tests
     [TestClass()]
     public class ClienteTests
     {
+        /// <summary>
+        /// Comprueba que el metodo suma saldo es correcto
+        /// </summary>
         [TestMethod()]
         public void SumaSaldoTest()
         {
@@ -18,7 +21,9 @@ namespace ExEDNaranja.Tests
             cliente.SumaSaldo(50);
             Assert.IsTrue(cliente.Saldo == 150);
         }
-
+        /// <summary>
+        /// Comprueba que el metodo restaSaldo es correcto
+        /// </summary>
         [TestMethod()]
         public void RestaSaldoTest()
         {
