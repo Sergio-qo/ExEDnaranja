@@ -6,29 +6,30 @@ using System.Threading.Tasks;
 
 namespace ExEDNaranja
 {
-    class Cliente
+    public class Cliente
     {
         private string nombre;
         private string dni;
         private double saldo;
+        public double Saldo { get { return saldo; } }
 
         public Cliente()
         {
-            this.saldo = 100;
+            saldo = 100;
         }
 
 
 
 
 
-        public void SumaSaldo(double saldo)
+        public void SumaSaldo(double sal)
         {
-            this.saldo += saldo;
+            saldo += sal;
         }
 
-        public void RestaSaldo(double saldo)
+        public void RestaSaldo(double sal)
         {
-            this.saldo -= saldo;
+            this.saldo -= sal;
         }
 
         public string PositivoNegativo()
